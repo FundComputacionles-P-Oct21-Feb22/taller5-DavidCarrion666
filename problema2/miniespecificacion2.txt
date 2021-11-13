@@ -1,0 +1,77 @@
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, 
+la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida excede de 50 unidades, se hace un descuento de 15%.
+
+1. Inicio
+
+2. cantidadRequerida , d[0, n]
+3. precioUnitario, d[0, n]
+4. valorTotal, d[0, n]
+5. descuento, d[0, n]
+6. porcentaje, d[0, n] <-- 15
+7. nombreArticulo, x(30) [{a-z}, {A-B}, {BD}]
+
+8. Escribir "Ingrese el nombre del articulo"
+9. Lea nombreArticulo
+
+10. Escribir "Ingrese la cantidad requerida"
+11. Lea cantidadRequerida
+
+12. Escribir "Ingrese el precio unitario"
+13. Lea precioUnitario
+
+
+14. ValorTotal<-- cantidadRequerida * precioUnitario
+15. Si la cantidadRequrida > 50 entonces
+       // vt ---- 100%
+       // x  ---- 15%
+
+16.	descuento <-- (porcentaje * valorTotal) / 100
+17.	valor total <-- valorTotal - descuento
+18. Fin si
+19. Escribir "valor total:" + valorTotal + "Pertenece al articulo:" + nombreArticulo
+20. Fin
+
+//////////////////////////////////////////// Parte 2 ////////////////////////////////////////////
+
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, 
+la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida son 10 unidades o 20 unidades, se hace un descuento de 15%.
+caso contrario se descuenta el 10%
+
+1. Inicio
+
+2. cantidadRequerida , d[0, n]
+3. precioUnitario, d[0, n]
+4. valorTotal, d[0, n]
+5. descuento1, d[0, n]
+6. descuento2, d[0, n]
+7. porcentaje1, d[0, n] <-- 15
+8. porcentaje2, d[0, n] <-- 10
+9. nombreArticulo, x(30) [{a-z}, {A-B}, {BD}]
+
+10. Escribir "Ingrese el nombre del articulo"
+11. Lea nombreArticulo
+
+12. Escribir "Ingrese la cantidad requerida"
+13. Lea cantidadRequerida
+
+14. Escribir "Ingrese el precio unitario"
+15. Lea precioUnitario
+
+
+16. ValorTotal<-- cantidadRequerida * precioUnitario
+17. Si cantidadRequerida = 10 || antidadRequerida = 20 entonces
+       // vt ---- 100%
+       // x  ---- 15%
+18. descuento1 <-- (porcentaje1 * valorTotal) / 100
+19. valorTotal <-- valorTotal - descuento1
+
+20. De lo contrario
+
+21.	descuento2 <-- (porcentaje * valorTotal) / 100
+22.	valor total <-- valorTotal - descuento2
+
+23. Fin si
+24. Escribir "valor total:" + valorTotal + "Pertenece al articulo:" + nombreArticulo
+25. Fin

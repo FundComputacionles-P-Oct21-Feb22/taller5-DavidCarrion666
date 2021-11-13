@@ -1,0 +1,26 @@
+Generar una solución que lea la temperatura en grados centı́grados (◦C) y la convierta a grados
+Farenheit (◦F) y a grados Kelvin (◦K), siempre y usando la temperatura dada
+en grados centı́grados sea positiva y menor o igual que cien.
+
+1. Inicio
+
+2. grados_Celsius, d[0, n]
+3. grados_Farenheit, d[0, n]
+4. grados_Kelvin, d[0, n]
+
+5. Escribir "Ingresar grados Celsius"
+6. Lea grados_Celsius
+
+7. Si grados_Celsius >= 1 && <= 100 entonces
+8. grados_Farenhit <-- 9/5 * grados_Celsius + 32
+9. grados_Kelvin <-- grados_Celsius + 273.15
+
+10. De lo contrario
+11. Escribir que los datos ingresados no son validos
+12. Fin si
+
+13. Escribir "La temperatura en grados celsius es:" + grados_Celsius +
+ "La temperatura en grados farenheit es:" + grados_Farenheit +
+"La temperatura en gradosKelvin es:" + grados_Kelvin
+
+14. Fin
